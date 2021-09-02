@@ -61,9 +61,7 @@ body{
     border-radius: 5px;
     transform-origin: bottom;
     top: 18%;
-    transform: rotate(360deg);
-    --rotation: 0;
-    transform: rotate(var(--rotation));
+
 }
 .second{
     position: absolute;
@@ -73,9 +71,6 @@ body{
     transform-origin: bottom;
     border-radius: 50px;
     top: 11%;
-    transform: rotate(130deg);
-    --rotation: 0;
-    transform: rotate(var(--rotation));
 }
 .hour{
     position: absolute;
@@ -85,6 +80,24 @@ body{
     background-color: var(--white);
     border-radius: 5px;
     top: 28%;
-    --rotation: 0;
-    transform: rotate(var(--rotation));
+}
+
+@media screen and (max-width: 600px){
+    .analog-clock{
+        width: 300px;
+        height: 300px;
+    }
+    .minute{
+        width: 10px;
+        height: 90px;
+    }
+    .second{
+        width: 3px;
+        height: 110px;
+
+    }
+    .hour{
+        width: 15px;
+        height: 70px;
+    }
 }
