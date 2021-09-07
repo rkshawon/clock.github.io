@@ -90,14 +90,15 @@ body{
     .minute{
         width: 10px;
         height: 90px;
+        top: 15%;
     }
     .second{
         width: 3px;
         height: 110px;
-
     }
     .hour{
         width: 15px;
         height: 70px;
+        top: 24%;
     }
 }
